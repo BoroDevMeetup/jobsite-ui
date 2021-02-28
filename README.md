@@ -39,6 +39,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
 
+### Code Styling
+#### Components - naming
+* Re-name component files generated with the CLI to have the same name as the component folder. (Ex. TopNav component in the /top-nav folder should have the template name top-nav.template.hbs) Do the same for routes, controllers, etc.
+
+
 ### Building
 
 * `ember build` (development)
