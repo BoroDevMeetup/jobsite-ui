@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header.top-nav {
+    /* Container for top menu bar on each page */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin: 10px 20px;
+}
+
+.wordmark {
+    height: 60px;
+}
+
+nav.top-menu {
+    width: 100%;
+    margin: 0 30px;
+}
+
+nav.top-menu > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li.menu-item {
+    list-style-type: none;
+}
+
