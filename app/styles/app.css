@@ -33,3 +33,19 @@ li.menu-item {
     list-style-type: none;
 }
 
+/* sub-nav styles */
+
+.sub-nav{
+    display: flex;
+    height: 80px;
+    background-color: #6399cc;
+    justify-content: start;
+    align-items: center;
+}
+.sub-nav-title{
+    color: #DDE5ED;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    margin-left: 20%;
+}
+
