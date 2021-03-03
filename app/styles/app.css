@@ -37,9 +37,9 @@ li.menu-item {
 
 .sub-nav{
     display: flex;
-    height: 80px;
+    height: 60px;
     background-color: #6399cc;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 }
 .sub-nav-title{
@@ -48,4 +48,9 @@ li.menu-item {
     font-size: 36px;
     margin-left: 20%;
 }
+.sub-nav a {
+    margin-right: 20%;
+}
+
+
 
