@@ -14,7 +14,10 @@ module('Integration | Component | sub-nav', function (hooks) {
 
     assert.equal(this.element.textContent.trim(), 'Jobs');
 
-    assert.equal(this.element.querySelector('.sub-nav').firstElementChild.nodeName, 'H2');
+  });
 
+  test('it contains an H2 element', async function (assert) {
+    await render(hbs`<SubNav />`);
+    assert.equal(this.element.querySelector('.sub-nav').firstElementChild.nodeName, 'H2');
   });
 });
