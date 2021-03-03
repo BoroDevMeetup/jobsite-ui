@@ -3,24 +3,18 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | sub-nav', function(hooks) {
+module('Integration | Component | sub-nav', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
+  test('it renders', async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
     await render(hbs`<SubNav />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), 'Jobs');
 
-    // Template block usage:
-    await render(hbs`
-      <SubNav>
-        template block text
-      </SubNav>
-    `);
+    assert.equal(this.element.querySelector('.sub-nav').firstElementChild.nodeName, 'H2');
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });
