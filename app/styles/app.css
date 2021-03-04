@@ -65,7 +65,7 @@ li.menu-item {
 }
 li.menu-item a:hover {
     color: var(--blue-dk);
-    text-shadow: 0 0 1px var(--blue-dk);
+    text-shadow: 0 0 2px var(--blue-dk);
     transition: all 300ms;
     
 }
