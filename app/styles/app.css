@@ -42,11 +42,13 @@ li.menu-item {
     justify-content: start;
     align-items: center;
 }
-.sub-nav-title{
+.sub-nav-title{   
     color: #DDE5ED;
     font-family: 'Lora', serif;
     font-size: 36px;
-    margin-left: 6.5em;
+    flex: 0 0 310px;
+    text-align: right;
+    margin-right: 48px;
 }
 .sub-nav a {
     width: 100%;
