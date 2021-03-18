@@ -57,5 +57,39 @@ li.menu-item {
     margin-right: 30px;
 }
 
+/* side menu styles */
+.side-menu{
+    font-family: 'Lora', serif;
+    text-align: right;
+    width: 310px;
+    box-sizing: border-box;
+}
+.side-menu p{
+    color: #6399cc;
+    font-size: 12px;
+}
+.side-menu-filters{
+    margin: 20px 0px;
+}
+.side-menu a{
+    text-decoration: none;
+    color: #0A141E;
+
+}
+.side-menu-item{
+    width: 50%;
+    margin: 10px 0px;
+    margin-left: 50%;
+    border-radius: 10px;
+    padding: 5px;
+}
+.side-menu-item:hover{
+    background-color: #6399cc;
+    border: #1E3D5B solid;
+
+}
+.side-menu-item a:hover{
+    color:#DDE5ED;
+}
 
 
