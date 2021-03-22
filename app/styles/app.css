@@ -61,7 +61,7 @@ li.menu-item {
 .side-menu{
     width: 310px;
 }
-.side-menu, .side-menu input{
+.side-menu, .side-menu input, .side-menu button{
     font-family: 'Lora', serif;
     text-align: right;
 }
@@ -92,7 +92,7 @@ li.menu-item {
 .side-menu-item{
     width: 50%;
     margin-left: 50%;
-    border-radius: 15px;
+    border-radius: 7px;
     padding: 7px;
     box-sizing: border-box;
     color: #0A141E;
@@ -101,6 +101,16 @@ li.menu-item {
 .side-menu-item:hover, .side-menu-item.active{
     background-color: #1E3D5B;
     color: #DDE5ED;
+}
+
+#add-job-button{
+    width: 50%;
+    text-align: center;
+    color: #6399cc;
+    padding: 5px;
+    background-color: white;
+    border: #1E3D5B solid;
+    border-radius: 7px;
 }
 
 
