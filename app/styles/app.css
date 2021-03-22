@@ -1,0 +1,92 @@
+:root {
+    --main-blue: #6399CC;
+    --blue-lt: #B0C5D9;
+    --blue-wht: #DDE5ED;
+    --blue-med: #1E3D5B;
+    --blue-dk: #0A141E;
+    --accent-grn: #65CC63;
+    --accent-prp: #9663CC;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lora, serif;
+    font-weight: normal;
+    color: var(--blue-dk);
+}
+
+header.top-nav {
+    /* Container for top menu bar on each page */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin: 10px 20px;
+}
+
+.wordmark {
+    height: 60px;
+}
+
+nav.top-menu {
+    /* Navigation container  */
+    width: 100%;
+    margin: 0 30px;
+}
+
+nav.top-menu > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li.menu-item {
+    margin: 20px 0 20px 20px;
+    display: block;
+}
+
+ li.menu-item a, li.menu-item a:link, li.menu-item a:visited {
+    position: relative;
+    text-decoration: none;
+    color: var(--main-blue);
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    transition: all 300ms;
+    
+}
+li.menu-item a:hover {
+    color: var(--blue-dk);
+    text-shadow: 0 0 2px var(--blue-dk);
+    transition: all 300ms;
+    
+}
+ul li a::after {
+    /* underline box  */
+    /* https://webdevtrick.com/css-menu-hover-underline/ */
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    top: 120%;
+    left: 0;
+    background: var(--accent-grn);
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+
+  ul li a:hover::after {
+    transform: scaleX(1.4);
+  }
+
+
+
