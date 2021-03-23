@@ -1,5 +1,4 @@
 import Controller from '@ember/controller';
-
 export default class JobsController extends Controller {
     menuList = ['Full Time',
         'Part Time',
@@ -8,4 +7,3 @@ export default class JobsController extends Controller {
         'Temporary',
         'Internship'];
 }
-console.log(JobsController.menuList);
