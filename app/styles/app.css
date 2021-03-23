@@ -64,6 +64,7 @@ li.menu-item {
 .side-menu, .side-menu input, .side-menu button{
     font-family: 'Lora', serif;
     text-align: right;
+    font-weight: bold;
 }
 #search-form{
     margin-top: 10px;
@@ -74,6 +75,8 @@ li.menu-item {
     border-radius: 7px;
     padding: 7px;
     color: #1E3D5B;
+    width: 50%;
+    box-sizing: border-box;
 }
 #search-form input::placeholder{
     color: #6399cc;
@@ -88,6 +91,7 @@ li.menu-item {
 .side-menu-item a{
     text-decoration: none;
     color: inherit;
+    font-weight: normal;
 }
 .side-menu-item{
     width: 50%;
@@ -106,7 +110,7 @@ li.menu-item {
 #add-job-button{
     width: 50%;
     text-align: center;
-    color: #6399cc;
+    color: #1E3D5B;
     padding: 5px;
     background-color: white;
     border: #1E3D5B solid;
