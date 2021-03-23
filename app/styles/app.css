@@ -93,12 +93,12 @@ ul li a::after {
 .sub-nav{
     display: flex;
     height: 60px;
-    background-color: #6399cc;
+    background-color: var(--main-blue);
     justify-content: start;
     align-items: center;
 }
 .sub-nav-title{   
-    color: #DDE5ED;
+    color: var(--blue-wht);
     font-family: 'Lora', serif;
     font-size: 36px;
     flex: 0 0 310px;
@@ -125,19 +125,19 @@ ul li a::after {
     margin-top: 10px;
 }
 #search-form input{
-    background-color: #DDE5ED;
-    border: #6399cc solid;
+    background-color: var(--blue-wht);
+    border: var(--main-blue) solid;
     border-radius: 7px;
     padding: 7px;
-    color: #1E3D5B;
+    color: var(--blue-dk);
     width: 50%;
     box-sizing: border-box;
 }
 #search-form input::placeholder{
-    color: #6399cc;
+    color: var(--main-blue);
 }
 .side-menu p{
-    color: #6399cc;
+    color: var(--main-blue);
     font-size: 12px;
 }
 .side-menu-filters{
@@ -154,21 +154,21 @@ ul li a::after {
     border-radius: 7px;
     padding: 7px;
     box-sizing: border-box;
-    color: #0A141E;
+    color: var(--blue-dk);
 
 }
 .side-menu-item:hover, .side-menu-item.active{
-    background-color: #1E3D5B;
-    color: #DDE5ED;
+    background-color: var(--blue-med);
+    color: var(--blue-wht);
 }
 
 #add-job-button{
     width: 50%;
     text-align: center;
-    color: #1E3D5B;
+    color: var(--blue-med);
     padding: 5px;
     background-color: white;
-    border: #1E3D5B solid;
+    border: var(--blue-med) solid;
     border-radius: 7px;
 }
 
