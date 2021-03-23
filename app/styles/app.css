@@ -88,5 +88,29 @@ ul li a::after {
     transform: scaleX(1.4);
   }
 
+/* sub-nav styles */
+
+.sub-nav{
+    display: flex;
+    height: 60px;
+    background-color: #6399cc;
+    justify-content: start;
+    align-items: center;
+}
+.sub-nav-title{   
+    color: #DDE5ED;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    flex: 0 0 310px;
+    text-align: right;
+    margin-right: 48px;
+}
+.sub-nav a {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
 
 
