@@ -1,4 +1,4 @@
-<SideMenu @menuItems={{this.menuList}} />
+<SideMenu @menuItems={{this.menuList}} @filter={{this.filterJobs}} />
 
 {{#each model as |job|}}
 <div class="error">{{job.title}}</div>
@@ -6,4 +6,5 @@
 <div class="error">{{job.jobType}}</div>
 <div class="error">{{job.city}}</div>
 <div class="error">{{job.state}}</div>
+<div class="error">{{job.xp}}</div>
 {{/each}}

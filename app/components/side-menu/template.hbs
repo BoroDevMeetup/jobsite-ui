@@ -9,8 +9,8 @@
             <a href="#">All</a>
         </div>
         {{#each @menuItems as |item|}}
-        <div class="side-menu-item">
-            <a href="#">{{item}}</a>
+        <div {{on "click" (fn @filter "full-time" )}}class="side-menu-item">
+            <a>{{item}}</a>
         </div>
         {{/each}}
     </div>
