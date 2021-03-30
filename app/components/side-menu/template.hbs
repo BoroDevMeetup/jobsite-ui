@@ -5,13 +5,12 @@
 
     <div class="side-menu-filters">
         <p>FILTER BY</p>
-        <div class="side-menu-item active">
-            <a href="#">All</a>
-        </div>
+        <LinkTo class="side-menu-item" @route="jobs" @query={{hash filter="" }}>All
+        </LinkTo>
         {{#each @menuItems as |item|}}
-        <div {{on "click" (fn @filter "full-time" )}}class="side-menu-item">
-            <a>{{item}}</a>
-        </div>
+
+        <LinkTo class="side-menu-item" @route="jobs" @query={{hash filter=item}}>{{item}}
+        </LinkTo>
         {{/each}}
     </div>
     <button id="add-job-button">Add Job</button>

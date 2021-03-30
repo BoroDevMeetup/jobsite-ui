@@ -1,5 +1,6 @@
 import Controller from '@ember/controller';
-import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
+
 export default class JobsController extends Controller {
     menuList = ['Full Time',
         'Part Time',
@@ -8,12 +9,19 @@ export default class JobsController extends Controller {
         'Temporary',
         'Internship'];
 
-    // jobs = this.store.peekAll('job');
 
-    @action
-    filterJobs(filterArg) {
-        alert(filterArg);
-        const jobs = this.store.peekAll('job');
+    queryParams = ['filter'];
+    @tracked filter = null;
+    @tracked model;
 
+    get filteredJobs() {
+        let filter = this.filter;
+        let jobs = this.model;
+        const formattedFilter = filter.replace(" ", "-").toLowerCase();
+        if (filter) {
+            return jobs.filterBy('jobType', formattedFilter);
+        } else {
+            return jobs;
+        }
     }
 }

@@ -15,4 +15,5 @@ export default class JobModel extends Model {
   @attr('string') state;
   @attr('string') companyName;
   @attr('string') techStack;
+
 }

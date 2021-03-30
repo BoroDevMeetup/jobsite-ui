@@ -143,19 +143,17 @@ ul li a::after {
 .side-menu-filters{
     margin: 20px 0px;
 }
-.side-menu-item a{
+.side-menu-item {
     text-decoration: none;
     color: inherit;
     font-weight: normal;
-}
-.side-menu-item{
     width: 50%;
     margin-left: 50%;
     border-radius: 7px;
     padding: 7px;
     box-sizing: border-box;
     color: var(--blue-dk);
-
+    display: block;
 }
 .side-menu-item:hover, .side-menu-item.active{
     background-color: var(--blue-med);
