@@ -15,10 +15,11 @@ export default class JobsController extends Controller {
     @tracked model;
 
     get filteredJobs() {
+
         let filter = this.filter;
         let jobs = this.model;
-        const formattedFilter = filter.replace(" ", "-").toLowerCase();
         if (filter) {
+            const formattedFilter = filter.replace(" ", "-").toLowerCase();
             return jobs.filterBy('jobType', formattedFilter);
         } else {
             return jobs;
