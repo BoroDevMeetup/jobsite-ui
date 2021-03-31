@@ -115,6 +115,7 @@ ul li a::after {
 /* side menu styles */
 .side-menu{
     width: 310px;
+    float: left;
 }
 .side-menu, .side-menu input, .side-menu button{
     font-family: 'Lora', serif;
@@ -170,5 +171,7 @@ ul li a::after {
     border-radius: 7px;
 }
 
-
-
+/* main content styles */
+.list{
+    margin-left: 310px
+}
