@@ -19,6 +19,7 @@
 /testem.log
 /yarn-error.log
 .prettierrc.json
+jsconfig.json
 
 # ember-try
 /.node_modules.ember-try/
