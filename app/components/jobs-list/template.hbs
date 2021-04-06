@@ -1,0 +1,12 @@
+<div class="jobs-list">
+
+    <ul class="results">
+        <JobsList::Filter @jobs={{@jobs}} @query={{@searchInput}} @filter={{@filter}} as |results|>
+            {{#each results as |job|}}
+            <li>
+                <Job @job={{job}} />
+            </li>
+            {{/each}}
+        </JobsList::Filter>
+    </ul>
+</div>

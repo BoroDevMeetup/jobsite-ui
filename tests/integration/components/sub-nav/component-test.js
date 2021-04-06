@@ -18,6 +18,6 @@ module('Integration | Component | sub-nav', function (hooks) {
 
   test('it contains an H2 element', async function (assert) {
     await render(hbs`<SubNav />`);
-    assert.equal(this.element.querySelector('.sub-nav').firstElementChild.nodeName, 'H2');
+    assert.dom('h2').exists();
   });
 });
