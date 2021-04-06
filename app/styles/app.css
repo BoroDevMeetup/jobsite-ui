@@ -175,3 +175,8 @@ ul li a::after {
 .list{
     margin-left: 310px
 }
+
+/* user agent resets */
+:focus {
+    outline: none;
+}
