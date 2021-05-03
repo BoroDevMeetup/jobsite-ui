@@ -1,0 +1,17 @@
+<div class="side-menu">
+    <div id="search-form">
+        <Input @value={{@searchInput}} placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+    </div>
+
+    <div class="side-menu-filters">
+        <p>FILTER BY</p>
+        <LinkTo class="side-menu-item" @route="jobs" @query={{hash filter="" }}>All
+        </LinkTo>
+        {{#each @menuItems as |item|}}
+
+        <LinkTo class="side-menu-item" @route="jobs" @query={{hash filter=item}}>{{item}}
+        </LinkTo>
+        {{/each}}
+    </div>
+    <button id="add-job-button">Add Job</button>
+</div>

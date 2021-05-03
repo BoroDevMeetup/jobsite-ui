@@ -1,7 +1,5 @@
-{{#each model as |job|}}
-<div class="error">{{job.title}}</div>
-<div class="error">{{job.bio}}</div>
-<div class="error">{{job.jobType}}</div>
-<div class="error">{{job.city}}</div>
-<div class="error">{{job.state}}</div>
-{{/each}}
+<SideMenu @menuItems={{this.menuList}} @searchInput={{this.searchField}} />
+
+<div class="list">
+    <JobsList @searchInput={{this.searchField}} @jobs={{this.model}} @filter={{this.filter}} />
+</div>

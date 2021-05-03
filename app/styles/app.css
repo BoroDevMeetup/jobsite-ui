@@ -93,12 +93,12 @@ ul li a::after {
 .sub-nav{
     display: flex;
     height: 60px;
-    background-color: #6399cc;
+    background-color: var(--main-blue);
     justify-content: start;
     align-items: center;
 }
 .sub-nav-title{   
-    color: #DDE5ED;
+    color: var(--blue-wht);
     font-family: 'Lora', serif;
     font-size: 36px;
     flex: 0 0 310px;
@@ -112,5 +112,71 @@ ul li a::after {
     margin-right: 30px;
 }
 
+/* side menu styles */
+.side-menu{
+    width: 310px;
+    float: left;
+}
+.side-menu, .side-menu input, .side-menu button{
+    font-family: 'Lora', serif;
+    text-align: right;
+    font-weight: bold;
+}
+#search-form{
+    margin-top: 10px;
+}
+#search-form input{
+    background-color: var(--blue-wht);
+    border: var(--main-blue) solid;
+    border-radius: 7px;
+    padding: 7px;
+    color: var(--blue-dk);
+    width: 50%;
+    box-sizing: border-box;
+}
+#search-form input::placeholder{
+    color: var(--main-blue);
+}
+.side-menu p{
+    color: var(--main-blue);
+    font-size: 12px;
+}
+.side-menu-filters{
+    margin: 20px 0px;
+}
+.side-menu-item {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    width: 50%;
+    margin-left: 50%;
+    border-radius: 7px;
+    padding: 7px;
+    box-sizing: border-box;
+    color: var(--blue-dk);
+    display: block;
+}
+.side-menu-item:hover, .side-menu-item.active{
+    background-color: var(--blue-med);
+    color: var(--blue-wht);
+}
 
+#add-job-button{
+    width: 50%;
+    text-align: center;
+    color: var(--blue-med);
+    padding: 5px;
+    background-color: white;
+    border: var(--blue-med) solid;
+    border-radius: 7px;
+}
 
+/* main content styles */
+.list{
+    margin-left: 310px
+}
+
+/* user agent resets */
+:focus {
+    outline: none;
+}
