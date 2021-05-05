@@ -171,6 +171,21 @@ ul li a::after {
     border-radius: 7px;
 }
 
+/* loading page style */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.load-text {
+    display: block;
+    margin: calc(50vh - 180px) 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--blue-med);
+}
+
 /* main content styles */
 .list{
     margin-left: 310px
